@@ -1,7 +1,7 @@
 'use strict';
 
 var xml = require('xml');
-var Base = require('mocha').nodejs.reporters.Base;
+var Base = require('mocha/lib/nodejs/reporters/parallel-buffered');
 var fs = require('fs');
 var path = require('path');
 var debug = require('debug')('mocha-junit-reporter');
