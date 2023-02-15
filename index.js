@@ -31,7 +31,6 @@ try {
   // eslint-disable-next-line no-console
   console.warn("Couldn't determine Mocha version");
 }
-module.exports = MochaJUnitReporter;
 
 // A subset of invalid characters as defined in http://www.w3.org/TR/xml/#charsets that can occur in e.g. stacktraces
 // regex lifted from https://github.com/MylesBorins/xml-sanitizer/ (licensed MIT)
@@ -532,3 +531,5 @@ class MochaJUnitReporter extends Base {
     }
   }
 }
+
+module.exports = MochaJUnitReporter;

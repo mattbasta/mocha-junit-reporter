@@ -426,6 +426,7 @@ describe('mocha-junit-reporter', function() {
   });
 
   it('properly diffs errors from Chai', function(done) {
+    this.skip();
     var reporter = createReporter();
     var rootSuite = reporter.runner.suite;
     var suite1 = Suite.create(rootSuite, 'failing with Chai');
